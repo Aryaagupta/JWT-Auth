@@ -1,10 +1,3 @@
-Perfect, Arya — this is exactly what every good developer does before pushing code to GitHub.
-A **clean, informative `README.md`** makes your backend look professional and easy for anyone to understand or run.
-
-Below is a **complete, ready-to-use README** for your **JWT Authentication Backend (Node.js + Express + MongoDB)** —
-you can just copy–paste it into your project root (in the backend folder).
-
----
 
 # 🛡️ JWT Authentication Backend
 
@@ -232,15 +225,4 @@ const axiosInstance = axios.create({
 
 ---
 
- 🧾 License
-
-This project is open-source and available under the **MIT License**.
-
----
- ✅ Example GitHub Description Line:
-
-> A secure JWT authentication backend built with Node.js, Express, and MongoDB. Supports registration, login, and protected routes with bcrypt password hashing.
-
----
-
-Would you like me to write the **frontend README.md** next (to explain setup and connection with this backend)?
+ 
