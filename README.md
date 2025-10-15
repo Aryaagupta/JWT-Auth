@@ -232,4 +232,3 @@ This project is open-source and available under the **MIT License**.
 ---
 
 
-Would you like me to write the **frontend README.md** next (to explain setup and connection with this backend)?
