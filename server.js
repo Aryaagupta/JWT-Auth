@@ -3,18 +3,18 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
-import auth from "./middleware/authMiddleware.js";
+import { authenticateToken } from "./middleware/authMiddleware.js";
 
 dotenv.config();
-connectDB();
+connectDB();11111
 const app = express();
 app.use(express.json());
 app.use(cors());
 
 app.use("/api/auth", authRoutes);
 
-app.get("/api/protected", auth, (req, res) => {
-  res.json({ message: "You accessed a protected route", user: req.user });
+app.get("/api/protected", authenticateToken, (req, res) => {
+  res.json({ message: "Access granted to protected route" });
 });
 
 const PORT = process.env.PORT || 5000;
